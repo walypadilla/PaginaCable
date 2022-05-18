@@ -1,0 +1,49 @@
+<!-- Navigation -->
+<header class="mb-3">
+	<nav class="navbar navbar-expand-lg navbar-white bgNanvar static-top">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<img src="/images/Logo.jpeg" width="150px" height="130" alt="" />
+			</a>
+			<button
+				class="navbar-toggler toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarResponsive"
+				aria-controls="navbarResponsive"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<i class="fa fa-navicon fa-2x"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link <%= path === '/' ? 'active' : '' %>" href="/">
+							<i class="fas fa-home fa-2x"></i>
+							Inicio
+						</a>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link <%= path === '/servicios' ? 'active' : '' %>"
+							href="/revendedores"
+						>
+							<i class="fas fa-users fa-2x"></i>
+							Revendedores</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link <%= path === '/contacto' ? 'active' : '' %>"
+							href="/contacto"
+						>
+							<i class="fas fa-phone fa-2x"></i>
+							Contacto</a
+						>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
