@@ -8,7 +8,7 @@ const { EMAIL, PASSWORD_EMAIL } = require('../config/config');
 exports.getIndex = (req, res, next) => {
 	res.render('pages/index', {
 		path: '/',
-		title: 'Limpieza de fosas septicas El Salvador',
+		title: 'Inicio',
 	});
 };
 
